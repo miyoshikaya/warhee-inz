@@ -33,6 +33,7 @@
         <Button x:Name="LoginButton" Content="przejdź do logowania" Margin="77,430,106,0" VerticalAlignment="Top" Height="38" Click="LoginButton_Click" Grid.Column="1" FontSize="20"/>
         <Label Content="HOT COMBAT GAME " Width="1000" Height="146" FontSize="48" FontWeight="Bold" FontFamily="Showcard Gothic" Background="#FFDADADA" Foreground="#FF363636" BorderThickness="0" BorderBrush="#FFDADADA" Grid.ColumnSpan="3" HorizontalContentAlignment="Center" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
         <Image HorizontalAlignment="Left" Height="74" Margin="179.5,30,0,0" VerticalAlignment="Top" Width="76" Grid.Column="2" Source="D:\uni\barcio\WpfApp1\icons\gamepad.png"/>
+        <Image x:Name="scissors" HorizontalAlignment="Left" Height="76" Margin="24,498,0,0" VerticalAlignment="Top" Width="74" Source="scissors1.png" RenderTransformOrigin="0.255,4.465"/>
 
     </Grid>
 </Page>
