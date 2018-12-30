@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp1.StatsViewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="StatsViewWindow" Height="561" Width="800">
+    <Grid>
+
+
+        <Button x:Name="BackButton" Content="Powrót" Margin="691,0,26,490" VerticalAlignment="Bottom" Click="BackButton_Click"/>
+        <Image x:Name="ChartPic" Margin="146,10,146,20"/>
+        <Button x:Name="NextPicButton" Content="&gt;" HorizontalAlignment="Left" Margin="716,169,0,0" VerticalAlignment="Top" Width="76" Height="214" Click="NextPicButton_Click"/>
+        <Button x:Name="PreviousPicButton" Content="&lt;" Margin="0,169,0,147" Click="PreviousPicButton_Click" HorizontalAlignment="Left" Width="76"/>
+    </Grid>
+</Window>

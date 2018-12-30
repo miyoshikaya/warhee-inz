@@ -1,0 +1,36 @@
+﻿<Page x:Class="WpfApp1.View.DataBaseMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DataBaseMenu">
+
+    <Grid>
+        <DataGrid Background="#FF2C2C2C" AutoGeneratingColumn="OnAutoGeneratingColumn" x:Name="MainGrid" HorizontalAlignment="Left" Height="238" Margin="211,104,0,0" VerticalAlignment="Top" Width="355" IsReadOnly="True" SelectionMode="Single" BorderBrush="#FF4C759C" Foreground="#FF2B2626" >
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="#FF2C2C2C" />
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="#FF2C2C2C" />
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+        </DataGrid>
+        <Button x:Name="ShowPlayersButton" Content="Pokaż Graczy" HorizontalAlignment="Left" Margin="174,35,0,0" VerticalAlignment="Top" Width="125" Click="ShowPlayersButton_Click" RenderTransformOrigin="0.5,0.5" Height="44">
+
+        </Button>
+        <Button x:Name="ShowResearchersButton" Content="Pokaż Badaczy" HorizontalAlignment="Left" Margin="328,35,0,0" VerticalAlignment="Top" Width="123" Click="ShowResearchersButton_Click" Height="44"/>
+        <Button x:Name="ShowResearchButton" Content="Pokaż Badania" HorizontalAlignment="Left" Margin="478,35,0,0" VerticalAlignment="Top" Width="130" Click="ShowResearchButton_Click" Height="44"/>
+        <Button Content="Pokaż szczegóły" HorizontalAlignment="Left" Margin="631,104,0,0" VerticalAlignment="Top" Width="118" Height="62" Click="Button_Click"/>
+        <Button Content="Pokaż wszystkie &#xD;&#xA;gry &#xD;&#xA;gracza" HorizontalAlignment="Left" Margin="631,195,0,0" VerticalAlignment="Top" Width="118" Height="69" TextOptions.TextFormattingMode="Display" Visibility="Hidden"/>
+        <Button x:Name="BackToMenuButton" Content="Powrót" HorizontalAlignment="Left" Margin="23,25,0,0" VerticalAlignment="Top" Width="75" Click="BackToMenuButton_Click" />
+        <Button x:Name="ImportButton" Content="Importuj do excela" HorizontalAlignment="Left" Margin="631,35,0,0" VerticalAlignment="Top" Width="118" Height="44" Click="ImportButton_Click"/>
+        <Button x:Name="EditButton" Content="Edytuj" HorizontalAlignment="Left" Margin="631,183,0,0" VerticalAlignment="Top" Width="118" Height="62" Click="EditButton_Click"/>
+
+    </Grid>
+</Page>

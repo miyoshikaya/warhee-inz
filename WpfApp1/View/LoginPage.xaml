@@ -1,0 +1,37 @@
+﻿<Page x:Class="WpfApp1.View.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LoginPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="223*"/>
+            <ColumnDefinition Width="auto" MinWidth="310"/>
+            <ColumnDefinition Width="267*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="Login" Content="LOGOWANIE" Margin="53,42,0,0" VerticalAlignment="Top" Height="60" RenderTransformOrigin="0.283,-0.005" FontSize="36" HorizontalAlignment="Left" Width="213" Grid.Column="1" Grid.Row="1"/>
+        <TextBox x:Name="loginBox" HorizontalAlignment="Left" Height="30" Margin="104,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" TextChanged="loginBox_TextChanged" Grid.Column="1" Grid.Row="1"/>
+        <TextBox x:Name="ageBox" HorizontalAlignment="Left" Height="30" Margin="104,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" TextChanged="ageBox_TextChanged" LostFocus="ageBox_LostFocus" Grid.Column="1" Grid.Row="1"/>
+        <ComboBox x:Name="SexSelector" HorizontalAlignment="Left" Margin="104,245,0,0" VerticalAlignment="Top" Width="144" Grid.Column="1" Height="30" Grid.Row="1">
+            <ComboBoxItem Content="Kobieta" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Mężczyzna" HorizontalAlignment="Left" Width="118" />
+        </ComboBox>
+        <Label Content="Login:" HorizontalAlignment="Left" Margin="48,124,0,0" VerticalAlignment="Top" Grid.Column="1" Height="28" Width="46" Grid.Row="1"/>
+        <Label Content="Wiek:" HorizontalAlignment="Left" Margin="48,200,0,0" VerticalAlignment="Top" Grid.Column="1" Height="28" Width="42" Grid.Row="1"/>
+        <Label Content="Płeć:" HorizontalAlignment="Left" Margin="53,245,0,0" VerticalAlignment="Top" Grid.Column="1" Width="37" RenderTransformOrigin="1.324,0.607" Height="28 " Grid.Row="1"/>
+        <Button x:Name="ToGameButton" Content="Rozpocznij grę" Margin="104,298,69,0" MouseEnter="ToGameButton_MouseEnter" Click="ToGameButton_Click" Grid.Column="1" Height="72" VerticalAlignment="Top" Grid.Row="1"/>
+        <TextBox x:Name="RepeatLoginBox" HorizontalAlignment="Left" Height="30" Margin="104,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Grid.Column="1" Grid.Row="1"/>
+        <Label x:Name="RepeatLoginLabel" Content="Powtórz login:" HorizontalAlignment="Left" Margin="0,161,0,0" VerticalAlignment="Top" Height="28" Width="123" Grid.Column="1" Grid.Row="1"/>
+
+    </Grid>
+</Page>

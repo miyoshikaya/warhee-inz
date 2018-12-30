@@ -1,0 +1,26 @@
+﻿<Page x:Class="WpfApp1.View.GamePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:gif="http://wpfanimatedgif.codeplex.com" 
+      xmlns:local="clr-namespace:WpfApp1.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="GamePage">
+
+    <Grid x:Name="PleasureLevelSlider">
+        <Button x:Name="Kamień" Content="Kamień" Margin="238,271,486,0" Click="Kamień_Click" Height="20" VerticalAlignment="Top"/>
+        <Button x:Name="Papier" Content="Papier" Margin="360,271,0,0" Click="Papier_Click" HorizontalAlignment="Left" Width="74" Height="20" VerticalAlignment="Top"/>
+        <Button x:Name="Nożyce" Content="Nożyce" Margin="476,271,0,0" Click="Nożyce_Click" HorizontalAlignment="Left" Width="74" Height="20" VerticalAlignment="Top"/>
+        <Button x:Name="NextRoundButton" Content="Następna Runda?" HorizontalAlignment="Left" Margin="612,308,0,0" VerticalAlignment="Top" Width="142" Click="NextRoundButton_Click" IsEnabled="False" Height="58"/>
+        <TextBlock x:Name="RoundResult" HorizontalAlignment="Left" Margin="612,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Score" HorizontalAlignment="Left" Margin="80,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="RoundCounter" HorizontalAlignment="Left" Margin="80,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Slider x:Name="PleasureLevelSlider1" Maximum="100" Minimum="-100" Margin="280,0,281,84" RenderTransformOrigin="0.837,0.889" IsEnabled="False" Height="18" VerticalAlignment="Bottom" />
+        <Slider x:Name="PainLevelSlider" Maximum="100" Margin="280,0,281,34" IsEnabled="False" Height="18" VerticalAlignment="Bottom" />
+        <Button x:Name="MenuButton" Content="Powrót do Menu" Margin="40,310,620,84" Click="MenuButton_Click"/>
+        <Image x:Name="EyesGif" HorizontalAlignment="Left" Height="100" Margin="185,44,0,0" VerticalAlignment="Top" Width="447" gif:ImageBehavior.RepeatBehavior="3x"
+           />
+    </Grid>
+</Page>
