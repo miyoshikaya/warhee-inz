@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MenuWindow" Height="600" Width="1000">
-    <Grid>
+    <Grid Background="#FFDADADA">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="Auto"/>
@@ -17,10 +17,20 @@
             <RowDefinition Height="Auto" MinHeight="309"/>
             <RowDefinition Height="61*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="NewGamebutton" Content="Nowa Gra" Margin="115,110,439,0" Click="NewGamebutton_Click" Height="122" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
-        <Button x:Name="ReturnButton" Content="Wczytaj Gre" Margin="279,111,277,0" RenderTransformOrigin="-0.925,1.662" Click="ReturnButton_Click" Height="122" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
-        <Button x:Name="DataBaseButton" Content="Baza Danych" Margin="0,111,115,0" HorizontalAlignment="Right" Width="116" Click="DataBaseButton_Click" Height="123" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
-        <Label Content="   HOT COMBAT GAME" Margin="136,0,145,225" FontSize="36" FontWeight="Bold" Height="59" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="1"/>
+        <Button x:Name="NewGamebutton" Content="" Margin="110,110,446,0" Click="NewGamebutton_Click" Height="120" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" Width="120">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\uni\barcio\WpfApp1\icons\start.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ReturnButton" Content="" Margin="278,110,278,0" RenderTransformOrigin="-0.925,1.662" Click="ReturnButton_Click" Height="120" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" Width="120"/>
+        <Button x:Name="DataBaseButton" Content="" Margin="0,110,110,0" HorizontalAlignment="Right" Width="120" Click="DataBaseButton_Click" Height="120" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
+        <Label Content="HOT COMBAT GAME" Margin="10,0,10,225" FontSize="36" FontWeight="Bold" Height="59" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="1" Foreground="#FF363636" HorizontalContentAlignment="Center"/>
+        <Image HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="86" Margin="128,126,0,0" Grid.Row="1" Source="D:\uni\barcio\WpfApp1\icons\start.png" RenderTransformOrigin="2.6,0.875" Grid.Column="1"/>
+        <Label Content="Nowa gra" HorizontalAlignment="Left" Margin="110,235,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,0.513" Grid.Column="1" FontSize="16" Grid.Row="1" Width="120" Foreground="#FF666666" HorizontalContentAlignment="Center"/>
+        <Label Content="Wczytaj grę" HorizontalAlignment="Left" Margin="278,235,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,0.513" Grid.Column="1" FontSize="16" Grid.Row="1" Width="120" Foreground="#FF666666" HorizontalContentAlignment="Center"/>
+        <Label Content="Baza danych" HorizontalAlignment="Left" Margin="446,235,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,0.513" Grid.Column="1" FontSize="16" Grid.Row="1" Width="120" Foreground="#FF666666" HorizontalContentAlignment="Center"/>
+        <Image HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="86" Margin="464,126,0,0" Grid.Row="1" Source="D:\uni\barcio\WpfApp1\icons\database.png" RenderTransformOrigin="2.6,0.875" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="86" Margin="296,126,0,0" Grid.Row="1" Source="D:\uni\barcio\WpfApp1\icons\folder.png" RenderTransformOrigin="2.6,0.875" Grid.Column="1"/>
 
     </Grid>
 </Page>

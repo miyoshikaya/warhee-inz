@@ -7,25 +7,32 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="1000">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF5656A0" Offset="0"/>
+                <GradientStop Color="#FF424253" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Wybierz płeć przeciwnika" HorizontalAlignment="Left" Margin="1,229,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,0.513" Grid.Column="1" FontSize="16"/>
-        <ComboBox x:Name="SexSelector" HorizontalAlignment="Left" Margin="230,230,0,0" VerticalAlignment="Top" Width="193" SelectionChanged="SexSelector_SelectionChanged" Grid.Column="1" FontSize="16">
+        <Label Content="Wybierz płeć przeciwnika" HorizontalAlignment="Left" Margin="4,270,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,0.513" Grid.Column="1" FontSize="16"/>
+        <ComboBox x:Name="SexSelector" HorizontalAlignment="Left" Margin="224,270,0,0" VerticalAlignment="Top" Width="193" SelectionChanged="SexSelector_SelectionChanged" Grid.Column="1" FontSize="16">
             <ComboBoxItem Content="Kobieta"/>
             <ComboBoxItem Content="Mężczyzna"/>
         </ComboBox>
-        <Label Content="Wybierz tryb gry" HorizontalAlignment="Left" Margin="52,290,0,0" VerticalAlignment="Top" RenderTransformOrigin="-9.566,0.115" Grid.Column="1" FontSize="16"/>
-        <ComboBox x:Name="GameTypeSelector" HorizontalAlignment="Left" Margin="230,290,0,0" VerticalAlignment="Top" Width="193" SelectionChanged="GameTypeSelector_SelectionChanged" Grid.Column="1" FontSize="16" >
+        <Label Content="Wybierz tryb gry" HorizontalAlignment="Left" Margin="46,330,0,0" VerticalAlignment="Top" RenderTransformOrigin="-9.566,0.115" Grid.Column="1" FontSize="16"/>
+        <ComboBox x:Name="GameTypeSelector" HorizontalAlignment="Left" Margin="224,332,0,0" VerticalAlignment="Top" Width="193" SelectionChanged="GameTypeSelector_SelectionChanged" Grid.Column="1" FontSize="16" >
             <ComboBoxItem Content="Wariant wygranej"/>
             <ComboBoxItem Content="Wariant przegranej"/>
             <ComboBoxItem Content="Wariant remisu"/>
             <ComboBoxItem Content="Wariant nieuczciwy"/>
         </ComboBox>
-        <Button x:Name="LoginButton" Content="przejdź do logowania" Margin="83,389,100,0" VerticalAlignment="Top" Height="38" Click="LoginButton_Click" Grid.Column="1" FontSize="20"/>
-        <Label Content="HOT COMBAT GAME " HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="auto" Height="97" FontSize="48" FontWeight="Bold" Grid.Column="1" FontFamily="Showcard Gothic"/>
+        <Button x:Name="LoginButton" Content="przejdź do logowania" Margin="77,430,106,0" VerticalAlignment="Top" Height="38" Click="LoginButton_Click" Grid.Column="1" FontSize="20"/>
+        <Label Content="HOT COMBAT GAME " Width="1000" Height="146" FontSize="48" FontWeight="Bold" FontFamily="Showcard Gothic" Background="#FFDADADA" Foreground="#FF363636" BorderThickness="0" BorderBrush="#FFDADADA" Grid.ColumnSpan="3" HorizontalContentAlignment="Center" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <Image HorizontalAlignment="Left" Height="74" Margin="179.5,30,0,0" VerticalAlignment="Top" Width="76" Grid.Column="2" Source="D:\uni\barcio\WpfApp1\icons\gamepad.png"/>
 
     </Grid>
 </Page>
