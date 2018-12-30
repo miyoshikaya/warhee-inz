@@ -9,18 +9,27 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="GamePage">
 
-    <Grid x:Name="PleasureLevelSlider">
-        <Button x:Name="Kamień" Content="Kamień" Margin="238,271,486,0" Click="Kamień_Click" Height="20" VerticalAlignment="Top"/>
-        <Button x:Name="Papier" Content="Papier" Margin="360,271,0,0" Click="Papier_Click" HorizontalAlignment="Left" Width="74" Height="20" VerticalAlignment="Top"/>
-        <Button x:Name="Nożyce" Content="Nożyce" Margin="476,271,0,0" Click="Nożyce_Click" HorizontalAlignment="Left" Width="74" Height="20" VerticalAlignment="Top"/>
-        <Button x:Name="NextRoundButton" Content="Następna Runda?" HorizontalAlignment="Left" Margin="612,308,0,0" VerticalAlignment="Top" Width="142" Click="NextRoundButton_Click" IsEnabled="False" Height="58"/>
+    <Grid x:Name="PleasureLevelSlider" Background="#FFDADADA">
         <TextBlock x:Name="RoundResult" HorizontalAlignment="Left" Margin="612,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
         <TextBlock x:Name="Score" HorizontalAlignment="Left" Margin="80,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
         <TextBlock x:Name="RoundCounter" HorizontalAlignment="Left" Margin="80,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <Slider x:Name="PleasureLevelSlider1" Maximum="100" Minimum="-100" Margin="280,0,281,84" RenderTransformOrigin="0.837,0.889" IsEnabled="False" Height="18" VerticalAlignment="Bottom" />
-        <Slider x:Name="PainLevelSlider" Maximum="100" Margin="280,0,281,34" IsEnabled="False" Height="18" VerticalAlignment="Bottom" />
-        <Button x:Name="MenuButton" Content="Powrót do Menu" Margin="40,310,620,84" Click="MenuButton_Click"/>
         <Image x:Name="EyesGif" HorizontalAlignment="Left" Height="100" Margin="185,44,0,0" VerticalAlignment="Top" Width="447" gif:ImageBehavior.RepeatBehavior="3x"
            />
+        <DockPanel x:Name="LeftPanelLogin" HorizontalAlignment="Left" Height="204" LastChildFill="False" VerticalAlignment="Top" Width="800" Margin="0,246,0,0">
+            <DockPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF5656A0" Offset="0"/>
+                    <GradientStop Color="#FF424253" Offset="1"/>
+                </LinearGradientBrush>
+            </DockPanel.Background>
+        </DockPanel>
+        <Button x:Name="Kamień" Content="Kamień" Margin="238,271,486,0" Click="Kamień_Click" Height="20" VerticalAlignment="Top"/>
+        <Button x:Name="MenuButton" Content="Powrót do Menu" Margin="40,310,620,84" Click="MenuButton_Click"/>
+        <Button x:Name="Papier" Content="Papier" Margin="360,271,0,0" Click="Papier_Click" HorizontalAlignment="Left" Width="74" Height="20" VerticalAlignment="Top"/>
+        <Slider x:Name="PleasureLevelSlider1" Maximum="100" Minimum="-100" Margin="280,0,281,84" RenderTransformOrigin="0.837,0.889" IsEnabled="False" Height="18" VerticalAlignment="Bottom" Foreground="#FFDADADA" />
+        <Slider x:Name="PainLevelSlider" Maximum="100" Margin="280,0,281,34" IsEnabled="False" Height="18" VerticalAlignment="Bottom" Foreground="#FFDADADA" />
+        <Button x:Name="NextRoundButton" Content="Następna Runda?" HorizontalAlignment="Left" Margin="612,308,0,0" VerticalAlignment="Top" Width="142" Click="NextRoundButton_Click" IsEnabled="False" Height="58"/>
+        <Button x:Name="Nożyce" Content="Nożyce" Margin="476,271,0,0" Click="Nożyce_Click" HorizontalAlignment="Left" Width="74" Height="20" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="74" Margin="714,10,0,0" VerticalAlignment="Top" Width="76" Source="/WpfApp1;component/gamepad1.png" RenderTransformOrigin="3.956,2.983"/>
     </Grid>
 </Page>
